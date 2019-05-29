@@ -30,7 +30,8 @@ h1, h2, h3, h4 {
 
 section {
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 /*
  * Hero
@@ -151,9 +152,23 @@ section {
 .location-block {
   height: 100vh;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .location-block.slick-slide {
     display: flex; }
+  .location-block .next-section-arrow {
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 30px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url("../img/img-icon-down-arrows.svg") no-repeat center center;
+    background-size: 30px 100px;
+    animation: bounce 2s infinite; }
+    .location-block .next-section-arrow:hover, .location-block .next-section-arrow:focus, .location-block .next-section-arrow:visited, .location-block .next-section-arrow:active {
+      box-shadow: none;
+      outline: none; }
 
 .location-block__subtitle {
   text-transform: uppercase;

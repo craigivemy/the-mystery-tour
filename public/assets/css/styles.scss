@@ -45,6 +45,7 @@ h1, h2, h3, h4 {
 section {
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 /*
  * Hero
@@ -183,8 +184,24 @@ section {
   height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
   &.slick-slide {
     display: flex;
+  }
+  .next-section-arrow {
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 30px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url("#{$img_path}/img-icon-down-arrows.svg") no-repeat center center;
+    background-size: 30px 100px;
+    animation: bounce 2s infinite;
+    &:hover, &:focus, &:visited, &:active {
+      box-shadow: none;
+      outline: none;
+    }
   }
 }
 .location-block__subtitle {

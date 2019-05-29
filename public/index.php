@@ -26,6 +26,7 @@ require_once '../config.php';
                     </p>
                 </div>
             </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-2"></a>
         </div>
     </div>
     <div class="location-block location-block--accommodation location-block--accommodation-medellin">
@@ -37,6 +38,7 @@ require_once '../config.php';
                     <p class="location-block__dates">3 nights</p>
                 </div>
             </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-2"></a>
         </div>
     </div>
     <div class="location-block location-block--activities location-block--activities-medellin">
@@ -50,6 +52,7 @@ require_once '../config.php';
                     </p>
                 </div>
             </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-2"></a>
         </div>
     </div>
 </section>
@@ -66,6 +69,7 @@ require_once '../config.php';
                     </p>
                 </div>
             </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-3"></a>
         </div>
     </div>
     <div class="location-block location-block--accommodation location-block--accommodation-guatape">
@@ -77,6 +81,7 @@ require_once '../config.php';
                     <p class="location-block__dates">2 nights</p>
                 </div>
             </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-3"></a>
         </div>
     </div>
     <div class="location-block location-block--activities location-block--activities-guatape">
@@ -89,6 +94,7 @@ require_once '../config.php';
                     </p>
                 </div>
             </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-3"></a>
         </div>
     </div>
 </section>
@@ -106,6 +112,7 @@ require_once '../config.php';
                     </p>
                 </div>
             </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-4"></a>
         </div>
     </div>
     <div class="location-block location-block--accommodation location-block--accommodation-tayrona">
@@ -117,6 +124,7 @@ require_once '../config.php';
                     <p class="location-block__dates">3 nights</p>
                 </div>
             </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-4"></a>
         </div>
     </div>
     <div class="location-block location-block--activities location-block--activities-tayrona">
@@ -129,6 +137,7 @@ require_once '../config.php';
                     </p>
                 </div>
             </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-4"></a>
         </div>
     </div>
 </section>
