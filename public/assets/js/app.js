@@ -2,8 +2,29 @@ $(document).ready(function() {
   $('#js-ready-trigger').click(function() {
     $('.hero-overlay').fadeOut('slow', function() {
       $('.content').fadeIn('slow');
+      $('.locations-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      });
+      //$('.slick-prev').css('display', 'none');
     });
-  })
+  });
+
+  // $('.locations-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+  //   var currentSlider = slick.getSlick().$slider;
+  //   var test = $(currentSlider[0]).attr('id');
+  //   if (nextSlide == slick.slideCount - 1) {
+  //     $('.slick-next').css('display', 'none');
+  //     $('.slick-prev').show();
+  //   } else if (nextSlide != slick.slideCount - 1 && nextSlide != 0) {
+  //     $('.slick-next').show();
+  //     $('.slick-prev').show();
+  //   } else if (currentSlide == 0 || nextSlide == 0) {
+  //     $('.slick-next').show();
+  //     $('.slick-prev').css('display', 'none');
+  //   }
+  // });
 
 
   $('a[href*="#"]')
