@@ -5,7 +5,7 @@ require_once '../config.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>The Mystery Tour | Colombia 2019</title>
     <meta name="robots" content="noindex">
     <link rel="preload" href="/assets/css/styles.css" as="style">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -139,6 +139,49 @@ require_once '../config.php';
                 </div>
             </div>
             <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-4"></a>
+        </div>
+    </div>
+</section>
+
+<!-- Mompox -->
+<section id="section-4" class="locations-slider">
+    <div class="location-block location-block--mompox">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h4 class="location-block__subtitle">Old colonial</h4>
+                    <h2 class="location-block__title">Mompox</h2>
+                    <p class="location-block__dates">
+                        14th - 16th June
+                    </p>
+                </div>
+            </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-5"></a>
+        </div>
+    </div>
+    <div class="location-block location-block--accommodation location-block--accommodation-mompox">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h4 class="location-block__subtitle">Mompox - Accommodation</h4>
+                    <h2 class="location-block__title">Casa Sinning. Año 1637</h2>
+                    <p class="location-block__dates">2 nights</p>
+                </div>
+            </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-5"></a>
+        </div>
+    </div>
+    <div class="location-block location-block--activities location-block--activities-mompox">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col text-center">
+                    <h2 class="location-block__title">Activities</h2>
+                    <p class="location-block__dates">
+                        Hike to beaches in the park, sweat profusely, return to chill at hotel
+                    </p>
+                </div>
+            </div>
+            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-5"></a>
         </div>
     </div>
 </section>

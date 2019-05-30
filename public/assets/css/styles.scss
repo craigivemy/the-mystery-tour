@@ -283,3 +283,21 @@ section {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) 100%), url("#{$img_path}/tayrona-park.jpg") no-repeat center center;
   background-size: cover;
 }
+.location-block--mompox {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) 100%), url("#{$img_path}/mompox.jpg") no-repeat center center;
+  background-size: cover;
+}
+.location-block--accommodation-mompox {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) 100%), url("#{$img_path}/casa1637.jpg") no-repeat center center;
+  background-size: cover;
+  .location-block__title {
+    font-size: 8vw;
+    @media (min-width: 1200px) {
+      font-size: 80px;
+    }
+  }
+}
+.location-block--activities-mompox {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) 100%), url("#{$img_path}/tayrona-park.jpg") no-repeat center center;
+  background-size: cover;
+}
