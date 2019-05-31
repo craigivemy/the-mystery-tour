@@ -14,16 +14,8 @@ $(document).ready(function() {
     $(this).toggleClass('expanded');
     if ($(this).hasClass('expanded')) {
       $(this).text('Collapse All');
-      $('.itinerary__sheet__item').each(function() {
-        var button = $(this).find('.card--btn.collapsed');
-        $(button).trigger('click');
-      });
     } else {
       $(this).text('Expand All');
-      $('.itinerary__sheet__item').each(function() {
-        var button = $(this).find('.card--btn').not('.collapsed');
-        $(button).trigger('click');
-      });
     }
   });
 

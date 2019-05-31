@@ -8,7 +8,10 @@
             <div class="col-10 col-md-8 mx-auto itinerary__sheet">
                 <h1 class="itinerary__sheet--title">Itinerary</h1>
                 <div class="my-4">
-                    <button id="js-expand-all-itinerary" class="d-block ml-auto custom-btn custom-btn--med custom-btn--tertiary">Expand All</button>
+                    <button data-toggle="collapse" data-target=".multi-collapse"
+                            aria-expanded="false"
+                            id="js-expand-all-itinerary"
+                            class="d-block ml-auto custom-btn custom-btn--med custom-btn--tertiary">Expand All</button>
                 </div>
 
                 <div class="itinerary__sheet__item">
@@ -25,7 +28,7 @@
                                 </h2>
                             </div>
 
-                            <div id="item1" class="collapse" aria-labelledby="item1-heading" data-parent="#itinerary-accordion">
+                            <div id="item1" class="collapse multi-collapse" aria-labelledby="item1-heading" data-parent="#itinerary-accordion">
                                 <div class="card-body">
                                     <span class="flight-number">KL 1000 - KLM - Booking Ref: SOT4AT</span>
                                     <ul class="travel-steps">
@@ -63,7 +66,7 @@
                                 </h2>
                             </div>
 
-                            <div id="item2" class="collapse" aria-labelledby="item2-heading" data-parent="#itinerary-accordion-2">
+                            <div id="item2" class="collapse multi-collapse" aria-labelledby="item2-heading" data-parent="#itinerary-accordion-2">
                                 <div class="card-body">
                                     <span class="flight-number">LA4020 - LATAM Airlines/Colombia - Booking Ref: 52 027 624 / Reservation: LDXRKJ</span>
                                     <ul class="travel-steps">
@@ -95,7 +98,7 @@
                                 </h2>
                             </div>
 
-                            <div id="item3" class="collapse" aria-labelledby="item3-heading" data-parent="#itinerary-accordion-3">
+                            <div id="item3" class="collapse multi-collapse" aria-labelledby="item3-heading" data-parent="#itinerary-accordion-3">
                                 <div class="card-body">
                                     <p class="accomodation-info">
                                         Address: Cra. 36 ##7-10, Medellín, Antioquia, Colombia <br>
