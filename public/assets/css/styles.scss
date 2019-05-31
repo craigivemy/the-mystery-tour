@@ -1,5 +1,105 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap');
 $img_path: '../img';
+@keyframes pulsea {
+   0%, 80%, 100% {
+     text-shadow:
+             0pt 0px 0px rgba(255,255,255,0),
+             10pt 0px 0px rgba(255,255,255,0),
+             20pt 0px 0px rgba(255,255,255,0);
+   }
+   10% {
+     text-shadow:
+             0pt 0px 0px rgba(255,255,255,0.5),
+             10pt 0px 0px rgba(255,255,255,0),
+             20pt 0px 0px rgba(255,255,255,0);
+   }
+   20% {
+     text-shadow:
+             0pt 0px 0px rgba(255,255,255,1),
+             10pt 0px 0px rgba(255,255,255,0),
+             20pt 0px 0px rgba(255,255,255,0);
+   }
+   30% {
+     text-shadow:
+             0pt 0px 0px rgba(255,255,255,0.5),
+             10pt 0px 0px rgba(255,255,255,0.5),
+             20pt 0px 0px rgba(255,255,255,0);
+   }
+   40% {
+     text-shadow:
+             0pt 0px 0px rgba(255,255,255,0),
+             10pt 0px 0px rgba(255,255,255,1),
+             20pt 0px 0px rgba(255,255,255,0);
+   }
+   50% {
+     text-shadow:
+             0pt 0px 0px rgba(255,255,255,0),
+             10pt 0px 0px rgba(255,255,255,0.5),
+             20pt 0px 0px rgba(255,255,255,0.5);
+   }
+   60% {
+     text-shadow:
+             0pt 0px 0px rgba(255,255,255,0),
+             10pt 0px 0px rgba(255,255,255,0),
+             20pt 0px 0px rgba(255,255,255,1);
+   }
+   70% {
+     text-shadow:
+             0pt 0px 0px rgba(255,255,255,0),
+             10pt 0px 0px rgba(255,255,255,0),
+             20pt 0px 0px rgba(255,255,255,0.5);
+   }
+ }
+@keyframes pulseb {
+  0%, 80%, 100% {
+    text-shadow:
+            0pt 0px 0px rgba(255,255,255,0),
+            10pt 0px 0px rgba(255,255,255,0),
+            20pt 0px 0px rgba(255,255,255,0);
+  }
+  10% {
+    text-shadow:
+            0pt 0px 0px rgba(255,255,255,0),
+            10pt 0px 0px rgba(255,255,255,0),
+            20pt 0px 0px rgba(255,255,255,0.5);
+  }
+  20% {
+    text-shadow:
+            0pt 0px 0px rgba(255,255,255,0),
+            10pt 0px 0px rgba(255,255,255,0),
+            20pt 0px 0px rgba(255,255,255,1);
+  }
+  30% {
+    text-shadow:
+            0pt 0px 0px rgba(255,255,255,0),
+            10pt 0px 0px rgba(255,255,255,0.5),
+            20pt 0px 0px rgba(255,255,255,0.5);
+  }
+  40% {
+    text-shadow:
+            0pt 0px 0px rgba(255,255,255,0),
+            10pt 0px 0px rgba(255,255,255,1),
+            20pt 0px 0px rgba(255,255,255,0);
+  }
+  50% {
+    text-shadow:
+            0pt 0px 0px rgba(255,255,255,0.5),
+            10pt 0px 0px rgba(255,255,255,0.5),
+            20pt 0px 0px rgba(255,255,255,0);
+  }
+  60% {
+    text-shadow:
+            0pt 0px 0px rgba(255,255,255,1),
+            10pt 0px 0px rgba(255,255,255,0),
+            20pt 0px 0px rgba(255,255,255,0);
+  }
+  70% {
+    text-shadow:
+            0pt 0px 0px rgba(255,255,255,0.5),
+            10pt 0px 0px rgba(255,255,255,0),
+            20pt 0px 0px rgba(255,255,255,0);
+  }
+}
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -81,9 +181,9 @@ section {
   span {
     font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-    font-size: 25px;
+    font-size: 40px;
     @media (min-width: 1200px) {
-      font-size: 30px;
+      font-size: 60px;
     }
     color: #FFF;
   }
@@ -155,6 +255,10 @@ section {
  */
 .locations-slider {
   .slick-arrow {
+    display: none !important;
+    @media (min-width: 576px) {
+      display: inline-block !important;
+    }
     position: absolute;
     top: 50%;
     z-index: 100;
@@ -169,7 +273,7 @@ section {
     &.slick-next {
       background: transparent url("#{$img_path}/img-icon-right-arrow.svg") no-repeat center center;
       background-size: contain;
-      right: 80px;
+      right: 20px;
       animation: bounceRight 2s infinite;
     }
     &.slick-prev {
@@ -204,6 +308,40 @@ section {
     }
   }
 }
+.swipe-indicators {
+  margin: 25px 0;
+  position: relative;
+  right: 30px;
+  span.hand-icon {
+    color: #FFF;
+    position: relative;
+    top: 5px;
+    left: 2px;
+    background: url("#{$img_path}/icon-hand.png") no-repeat center center;
+    background-size: contain;
+    width: 25px;
+    margin-left: 40px;
+    height: 25px;
+  }
+  .indicate-swipe::after{
+    margin-left: 20px;
+    animation: pulsea 2s linear infinite;
+    font-size:20pt;
+    color:transparent; /*Using only shadows makes the animation easier*/
+    font-family: FontAwesome;
+    content:"\f105";
+    text-shadow:
+            0pt 0px 0px rgba(255,255,255,1),
+            10pt 0px 0px rgba(255,255,255,1),
+            20pt 0px 0px rgba(255,255,255,1);
+  }
+  .indicate-swipe--left:after {
+    font-family: FontAwesome;
+    content:"\f104";
+    animation: pulseb 2s linear infinite;
+    margin-left: 20px;
+  }
+}
 .location-block__subtitle {
   text-transform: uppercase;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
@@ -223,7 +361,7 @@ section {
 }
 .location-block__dates {
   color: #FFF;
-  font-size: 28px;
+  font-size: 36px;
 }
 .location-block--activities {
   .location-block__title {

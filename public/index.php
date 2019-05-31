@@ -10,6 +10,7 @@ require_once '../config.php';
     <link rel="preload" href="/assets/css/styles.css" as="style">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
@@ -19,15 +20,24 @@ require_once '../config.php';
     <div class="location-block location-block--medellin">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col">
+                <div class="col-12">
                     <h4 class="location-block__subtitle">First stop</h4>
                     <h2 class="location-block__title">Medellin</h2>
                     <p class="location-block__dates">
                         6th - 9th June
                     </p>
                 </div>
+                <div class="col-12 d-flex w-100 align-items-center">
+                    <div class="swipe-indicators d-flex d-sm-none mx-auto">
+                        <span class="indicate-swipe indicate-swipe--left">
+                        </span>
+                            <span class="hand-icon"></span>
+                        <span class="indicate-swipe">
+                        </span>
+                    </div>
+                </div>
             </div>
-            <a class="next-section-arrow d-flex flex-column mx-auto align-self-end" href="#section-2"></a>
+            <a class="next-section-arrow flex-column mx-auto align-self-end" href="#section-2"></a>
         </div>
     </div>
     <div class="location-block location-block--accommodation location-block--accommodation-medellin">
@@ -90,7 +100,7 @@ require_once '../config.php';
             <div class="row align-items-center">
                 <div class="col text-center">
                     <h2 class="location-block__title">Activities</h2>
-                    <p class="location-block__dates">
+                    <p class="location-block__dates px-sm-5 px-xl-0">
                         Moped exploring, lake-side chilling, Climb La Piedra del Penol
                     </p>
                 </div>
@@ -133,7 +143,7 @@ require_once '../config.php';
             <div class="row align-items-center">
                 <div class="col text-center">
                     <h2 class="location-block__title">Activities</h2>
-                    <p class="location-block__dates">
+                    <p class="location-block__dates px-sm-5 px-xl-0">
                         Hike to beaches in the park, sweat profusely, return to chill at hotel
                     </p>
                 </div>
@@ -176,7 +186,7 @@ require_once '../config.php';
             <div class="row align-items-center">
                 <div class="col text-center">
                     <h2 class="location-block__title">Activities</h2>
-                    <p class="location-block__dates">
+                    <p class="location-block__dates px-sm-5 px-xl-0">
                         Hike to beaches in the park, sweat profusely, return to chill at hotel
                     </p>
                 </div>

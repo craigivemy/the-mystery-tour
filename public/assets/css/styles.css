@@ -1,4 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap");
+@keyframes pulsea {
+  0%, 80%, 100% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px rgba(255, 255, 255, 0); }
+  10% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0.5), 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px rgba(255, 255, 255, 0); }
+  20% {
+    text-shadow: 0pt 0px 0px white, 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px rgba(255, 255, 255, 0); }
+  30% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0.5), 10pt 0px 0px rgba(255, 255, 255, 0.5), 20pt 0px 0px rgba(255, 255, 255, 0); }
+  40% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px white, 20pt 0px 0px rgba(255, 255, 255, 0); }
+  50% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px rgba(255, 255, 255, 0.5), 20pt 0px 0px rgba(255, 255, 255, 0.5); }
+  60% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px white; }
+  70% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px rgba(255, 255, 255, 0.5); } }
+@keyframes pulseb {
+  0%, 80%, 100% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px rgba(255, 255, 255, 0); }
+  10% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px rgba(255, 255, 255, 0.5); }
+  20% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px white; }
+  30% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px rgba(255, 255, 255, 0.5), 20pt 0px 0px rgba(255, 255, 255, 0.5); }
+  40% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0), 10pt 0px 0px white, 20pt 0px 0px rgba(255, 255, 255, 0); }
+  50% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0.5), 10pt 0px 0px rgba(255, 255, 255, 0.5), 20pt 0px 0px rgba(255, 255, 255, 0); }
+  60% {
+    text-shadow: 0pt 0px 0px white, 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px rgba(255, 255, 255, 0); }
+  70% {
+    text-shadow: 0pt 0px 0px rgba(255, 255, 255, 0.5), 10pt 0px 0px rgba(255, 255, 255, 0), 20pt 0px 0px rgba(255, 255, 255, 0); } }
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0); }
@@ -65,11 +99,11 @@ section {
   .hero span {
     font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-    font-size: 25px;
+    font-size: 40px;
     color: #FFF; }
     @media (min-width: 1200px) {
       .hero span {
-        font-size: 30px; } }
+        font-size: 60px; } }
   .hero .down-arrow {
     position: absolute;
     bottom: 30px;
@@ -128,6 +162,7 @@ section {
   * Location Blocks
  */
 .locations-slider .slick-arrow {
+  display: none !important;
   position: absolute;
   top: 50%;
   z-index: 100;
@@ -135,13 +170,16 @@ section {
   border: none;
   width: 60px;
   height: 60px; }
+  @media (min-width: 576px) {
+    .locations-slider .slick-arrow {
+      display: inline-block !important; } }
   .locations-slider .slick-arrow:active, .locations-slider .slick-arrow:visited, .locations-slider .slick-arrow:hover, .locations-slider .slick-arrow:focus {
     outline: none;
     box-shadow: none; }
   .locations-slider .slick-arrow.slick-next {
     background: transparent url("../img/img-icon-right-arrow.svg") no-repeat center center;
     background-size: contain;
-    right: 80px;
+    right: 20px;
     animation: bounceRight 2s infinite; }
   .locations-slider .slick-arrow.slick-prev {
     background: transparent url("../img/img-icon-left-arrow.svg") no-repeat center center;
@@ -170,6 +208,35 @@ section {
       box-shadow: none;
       outline: none; }
 
+.swipe-indicators {
+  margin: 25px 0;
+  position: relative;
+  right: 30px; }
+  .swipe-indicators span.hand-icon {
+    color: #FFF;
+    position: relative;
+    top: 5px;
+    left: 2px;
+    background: url("../img/icon-hand.png") no-repeat center center;
+    background-size: contain;
+    width: 25px;
+    margin-left: 40px;
+    height: 25px; }
+  .swipe-indicators .indicate-swipe::after {
+    margin-left: 20px;
+    animation: pulsea 2s linear infinite;
+    font-size: 20pt;
+    color: transparent;
+    /*Using only shadows makes the animation easier*/
+    font-family: FontAwesome;
+    content: "\f105";
+    text-shadow: 0pt 0px 0px white, 10pt 0px 0px white, 20pt 0px 0px white; }
+  .swipe-indicators .indicate-swipe--left:after {
+    font-family: FontAwesome;
+    content: "\f104";
+    animation: pulseb 2s linear infinite;
+    margin-left: 20px; }
+
 .location-block__subtitle {
   text-transform: uppercase;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
@@ -189,7 +256,7 @@ section {
 
 .location-block__dates {
   color: #FFF;
-  font-size: 28px; }
+  font-size: 36px; }
 
 .location-block--activities .location-block__title {
   font-size: 8vw; }

@@ -15,7 +15,7 @@
         </a>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col col-sm-10 col-md-8">
+                <div class="col">
                     <span>We are going to...</span>
                     <h1>
                     Colombia</h1>
