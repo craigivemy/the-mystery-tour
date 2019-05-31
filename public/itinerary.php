@@ -143,8 +143,8 @@
                                         </a>
                                     </p>
                                     <p class="accomodation-check">
-                                        <strong><i class="far fa-calendar-check"></i></strong>&nbsp; Fri 14th June <br>
-                                        <strong><i class="far fa-calendar-times"></i></strong>&nbsp; Sun 16th June
+                                        <strong><i class="far fa-calendar-check"></i></strong>&nbsp; Sunday 9th June <br>
+                                        <strong><i class="far fa-calendar-times"></i></strong>&nbsp; Tues 11th June
                                     </p>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
 
                 <div class="itinerary__sheet__item">
                     <h4 class="itinerary__sheet__item__title">
-                        <span class="d-inline-block pr-2"><i class="far fa-calendar-alt"></i></span>Sun 11th June
+                        <span class="d-inline-block pr-2"><i class="far fa-calendar-alt"></i></span>Tues 11th June
                     </h4>
                     <div class="accordion" id="itinerary-accordion-7">
                         <div class="card">
