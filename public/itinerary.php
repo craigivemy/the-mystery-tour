@@ -222,7 +222,7 @@
                     <h4 class="itinerary__sheet__item__title">
                         <span class="d-inline-block pr-2"><i class="far fa-calendar-alt"></i></span>Fri 14th June
                     </h4>
-                    <div class="accordion" id="itinerary-accordion">
+                    <div class="accordion" id="itinerary-accordion-5">
                         <div class="card">
                             <div class="card-header" id="item5-heading">
                                 <h2 class="mb-0">
@@ -232,7 +232,7 @@
                                 </h2>
                             </div>
 
-                            <div id="item5" class="collapse multi-collapse" aria-labelledby="item5-heading" data-parent="#itinerary-accordion">
+                            <div id="item5" class="collapse multi-collapse" aria-labelledby="item5-heading" data-parent="#itinerary-accordion-5">
                                 <div class="card-body">
                                     Roughly 6 hours of this...
                                     <img src="assets/img/scary-bus.jpg" alt="Scary Bus" class="img-fluid my-3">
