@@ -1,4 +1,7 @@
-<section class="hero-overlay">
+<?php
+    $from_itinerary = isset($_GET['back']) ? (bool) $_GET['back'] : false;
+?>
+<section class="hero-overlay" style="<?= $from_itinerary ? 'display: none;' : false;?>">
     <div class="container">
         <div class="row align-items-center">
             <div class="col text-center">
@@ -8,7 +11,7 @@
         </div>
     </div>
 </section>
-<div class="content" style="display: none;">
+<div class="content" style="<?= !$from_itinerary ? 'display: none;' : false;?>">
     <section class="hero">
         <a href="/itinerary.php" class="custom-btn custom-btn--secondary custom-btn--med fixed-itinerary">
             Itinerary
