@@ -1,3 +1,10 @@
+function getUrlParameter(name) {
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+  var results = regex.exec(location.search);
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
+
 $(document).ready(function() {
   $('#js-ready-trigger').click(function() {
     $('.hero-overlay').fadeOut('slow', function() {
@@ -55,5 +62,12 @@ $(document).ready(function() {
       }
     });
 
+    if (getUrlParameter('back')) {
+      $('.locations-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      });
+    }
 
 });
