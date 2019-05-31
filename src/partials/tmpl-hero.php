@@ -12,10 +12,10 @@
     </div>
 </section>
 <div class="content" style="<?= !$from_itinerary ? 'display: none;' : false;?>">
+    <a href="/itinerary.php" class="custom-btn custom-btn--secondary custom-btn--med fixed-itinerary">
+        Itinerary
+    </a>
     <section class="hero">
-        <a href="/itinerary.php" class="custom-btn custom-btn--secondary custom-btn--med fixed-itinerary">
-            Itinerary
-        </a>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col">

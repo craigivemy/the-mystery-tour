@@ -7,7 +7,6 @@ $(document).ready(function() {
         slidesToScroll: 1,
         infinite: true
       });
-      //$('.slick-prev').css('display', 'none');
     });
   });
 

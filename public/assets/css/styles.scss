@@ -242,6 +242,7 @@ section {
   position: fixed;
   top: 20px;
   right: 15px;
+  z-index: 300;
   @media (min-width: 768px) {
     right: 100px;
   }
@@ -468,6 +469,7 @@ section {
 footer {
   background: #3c4859!important;
   padding: 40px 0;
+  height: 100vh;
 }
 .footer__poem {
   padding: 0;
@@ -486,6 +488,7 @@ footer {
   position: fixed;
   top: 20px;
   left: 15px;
+  z-index: 300;
   @media (min-width: 768px) {
     left: 100px;
   }
@@ -503,6 +506,7 @@ footer {
 .itinerary__sheet {
   background: #FFF;
   padding: 25px;
+  z-index: 400;
 }
 .itinerary__sheet--title {
   text-align: center;
@@ -513,5 +517,64 @@ footer {
   @media (min-width: 1200px) {
     font-size: 100px;
   }
-
+}
+.itinerary__sheet__item {
+  padding: 30px 0;
+}
+.itinerary__sheet__item__title {
+  color: rgba(242, 66, 54, 1);
+  font-size: 20px;
+}
+.card-header {
+  background: rgba(46, 134, 171, 0.7);
+  padding: 0;
+}
+.card--btn {
+  text-align: left;
+  font-weight: bold;
+  color: #FFF;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  &:hover, &:visited, &:active, &:focus {
+    color: #FFF;
+  }
+}
+.btn--flight {
+  span {
+    margin-left: auto;
+  }
+}
+.flight-number {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.travel-steps {
+  list-style-type: none;
+  padding: 0 0 0 15px;
+  border-left: 3px solid rgba(46, 134, 171, 0.7);
+  li {
+    margin: 15px 0;
+    position: relative;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -22px;
+      top: 4px;
+      width: 20px;
+      height: 15px;
+      background: url("#{$img_path}/icon-bullet.svg") no-repeat center left;
+      background-size: 11px;
+    }
+  }
+}
+.travel-step--text {
+  font-weight: bold;
+  padding: 20px 0;
 }
