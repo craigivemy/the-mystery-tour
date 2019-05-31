@@ -10,21 +10,22 @@ $(document).ready(function() {
     });
   });
 
-  // $('.locations-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-  //   var currentSlider = slick.getSlick().$slider;
-  //   var test = $(currentSlider[0]).attr('id');
-  //   if (nextSlide == slick.slideCount - 1) {
-  //     $('.slick-next').css('display', 'none');
-  //     $('.slick-prev').show();
-  //   } else if (nextSlide != slick.slideCount - 1 && nextSlide != 0) {
-  //     $('.slick-next').show();
-  //     $('.slick-prev').show();
-  //   } else if (currentSlide == 0 || nextSlide == 0) {
-  //     $('.slick-next').show();
-  //     $('.slick-prev').css('display', 'none');
-  //   }
-  // });
-
+  $('#js-expand-all-itinerary').click(function() {
+    $(this).toggleClass('expanded');
+    if ($(this).hasClass('expanded')) {
+      $(this).text('Collapse All');
+      $('.itinerary__sheet__item').each(function() {
+        var button = $(this).find('.card--btn.collapsed');
+        $(button).trigger('click');
+      });
+    } else {
+      $(this).text('Expand All');
+      $('.itinerary__sheet__item').each(function() {
+        var button = $(this).find('.card--btn').not('.collapsed');
+        $(button).trigger('click');
+      });
+    }
+  });
 
   $('a[href*="#"]')
   // Remove links that don't actually link to anything

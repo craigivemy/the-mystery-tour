@@ -143,6 +143,13 @@ section {
   border: 3px solid #F5F749;
   transition: color 0.25s ease-in-out, border 0.25s ease-in-out; }
 
+.custom-btn--tertiary {
+  border: 3px solid #F24236;
+  color: #F24236; }
+  .custom-btn--tertiary:hover {
+    opacity: 0.5;
+    transition: opacity 0.25s ease-in-out, border 0.25s ease-in-out; }
+
 .custom-btn--med {
   font-size: 20px;
   padding: 10px 15px; }
@@ -404,9 +411,16 @@ footer {
   color: #f24236;
   font-size: 20px; }
 
+.card {
+  border: none; }
+
 .card-header {
-  background: rgba(46, 134, 171, 0.7);
+  background: #2e86ab;
   padding: 0; }
+
+.card-header--accomodation {
+  border: 6px solid #3c4859;
+  background: none; }
 
 .card--btn {
   text-align: left;
@@ -419,7 +433,12 @@ footer {
   .card--btn:hover, .card--btn:visited, .card--btn:active, .card--btn:focus {
     color: #FFF; }
 
-.btn--flight span {
+.card-header--accomodation .card--btn {
+  color: #3c4859;
+  box-shadow: none;
+  outline: none; }
+
+.btn--travel span {
   margin-left: auto; }
 
 .flight-number {
@@ -450,5 +469,13 @@ footer {
 .travel-step--text {
   font-weight: bold;
   padding: 20px 0; }
+
+.accomodation-title {
+  color: #2e86ab;
+  margin-top: 15px;
+  display: flex;
+  padding-right: 2rem; }
+  .accomodation-title span {
+    margin-left: auto; }
 
 /*# sourceMappingURL=styles.css.map */
