@@ -10,7 +10,7 @@
 </section>
 <div class="content" style="display: none;">
     <section class="hero">
-        <a id="js-itinerary-trigger" href="#" onclick="return false;" class="custom-btn custom-btn--secondary custom-btn--med fixed-itinerary">
+        <a href="/itinerary.php" class="custom-btn custom-btn--secondary custom-btn--med fixed-itinerary">
             Itinerary
         </a>
         <div class="container">
