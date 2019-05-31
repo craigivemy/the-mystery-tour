@@ -85,10 +85,14 @@ section {
 
 .hero {
   position: relative;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 100%), url("../img/colombia-window.jpg") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 100%), url("../img/colombia-window-mobile.jpg") no-repeat left center;
   background-size: cover;
   display: flex;
   align-items: center; }
+  @media (min-width: 992px) {
+    .hero {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 100%), url("../img/colombia-window.jpg") no-repeat center center;
+      background-size: cover; } }
   .hero h1 {
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     font-size: 15vw;
