@@ -518,12 +518,13 @@ footer {
 }
 .itinerary__sheet--title {
   text-align: center;
+  text-transform: uppercase;
   color: rgba(46, 134, 171, 1);
   font-weight: bold;
   font-size: 70px;
   text-shadow: 2px 4px 3px rgba(46, 134, 171, 0.3);
   @media (min-width: 1200px) {
-    font-size: 100px;
+    font-size: 90px;
   }
 }
 .itinerary__sheet__item {
@@ -539,10 +540,24 @@ footer {
 .card-header {
   background: rgba(46, 134, 171, 1);
   padding: 0;
+  border: 6px solid transparent;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    background: #FFF;
+    border: 6px solid rgba(46, 134, 171, 1);
+  }
+}
+.card-header:hover .card--btn {
+  color: rgba(46, 134, 171, 1);
 }
 .card-header--accomodation {
   border: 6px solid #3c4859;
   background: none;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    border: 6px solid transparent;
+    background: #3c4859;
+  }
 }
 .card--btn {
   text-align: left;
@@ -552,9 +567,13 @@ footer {
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
+  transition: all 0.25s ease-in-out;
   &:hover, &:visited, &:active, &:focus {
     color: #FFF;
   }
+}
+.card-header--accomodation:hover .card--btn {
+  color: #FFF;
 }
 .card-header--accomodation .card--btn {
   color: #3c4859;
@@ -606,4 +625,10 @@ footer {
   span {
     margin-left: auto;
   }
+}
+.accomodation-detail {
+  font-weight: bold;
+  color: #2e86ab;
+  display: block;
+  margin: 10px 0;
 }
