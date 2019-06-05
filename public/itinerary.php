@@ -177,6 +177,7 @@
                                             17:04 Santa Marta (SMR)
                                         </li>
                                     </ul>
+                                    <a class="flight-link" target="_blank" href="https://www.vivaair.com/co/en/manage/checkin">Web Check in &nbsp;<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -352,6 +353,16 @@
 
                             <div id="item11" class="collapse multi-collapse" aria-labelledby="item11-heading" data-parent="#itinerary-accordion-11">
                                 <div class="card-body">
+                                    <span class="flight-number">AV9789 - Avianca/BudgetAir - Booking Ref: BUK-13483696 / eTicket No: 1347321892224 / Online Check-in No: NPYCWD</span>
+                                        <ul class="travel-steps">
+                                            <li>
+                                                14:32 Cartagena (CTG)
+                                            </li>
+                                            <li>
+                                                16:04 Bogota (BOG)
+                                            </li>
+                                        </ul>
+                                    <p class="travel-step--text">Wait at Bogota ~ 8 hours</p>
                                     <span class="flight-number">AF 0429 - Air France - Booking Ref: SOT4AT</span>
                                     <ul class="travel-steps">
                                         <li>
