@@ -444,10 +444,13 @@ footer {
   font-weight: bold;
   color: #FFF;
   width: 100%;
-  padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  transition: all 0.25s ease-in-out; }
+  transition: all 0.25s ease-in-out;
+  padding: 0.5rem; }
+  @media (min-width: 576px) {
+    .card--btn {
+      padding: 1rem 2rem; } }
   .card--btn:hover, .card--btn:visited, .card--btn:active, .card--btn:focus {
     color: #FFF; }
 
